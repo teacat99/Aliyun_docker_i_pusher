@@ -1,3 +1,38 @@
+# 使用心得
+## 可用的Docker镜像站
+https://status.1panel.top/
+
+## 简易的自动拉取私有镜像脚本
+
+### 在你方便的位置（比如用户目录）下载拉取脚本：
+```sh
+curl -o docker_pull.sh https://github.com/teacat99/Aliyun_docker_i_pusher/blob/main/docker_pull.sh && chmod +x download_docker_pull.sh
+```
+
+### 修改 PRIVATE_REGISTRY 为你的私有仓库地址:`vi docker_pull.sh`
+```sh
+# 私有仓库地址
+PRIVATE_REGISTRY="registry.cn-hangzhou.aliyuncs.com/your-repo"
+```
+
+### 使用拉取脚本示例：
+```sh
+./docker_pull.sh snowdreamtech/frpc:0.61.1
+```
+- 脚本会执行：
+```sh
+registry.cn-hangzhou.aliyuncs.com/your-repo/frpc:0.61.1
+docker tag registry.cn-hangzhou.aliyuncs.com/your-repo/frpc:0.61.1 snowdreamtech/frpc:0.61.1
+```
+
+**注意事项**：
+私有仓库登录： 确保在运行脚本前登录私有仓库：
+
+```sh
+docker login registry.cn-hangzhou.aliyuncs.com
+```
+默认标签（latest）： 如果你私有仓库的镜像没有 latest 标签，确保镜像管理中包含一个合适的默认版本。
+
 # Docker Images Pusher
 
 使用Github Action将国外的Docker镜像转存到阿里云私有仓库，供国内服务器使用，免费易用<br>
@@ -11,7 +46,6 @@
 B站，抖音，Youtube全网同名，转载请注明作者<br>
 
 ## 使用方式
-
 
 ### 配置阿里云
 登录阿里云容器镜像服务<br>
