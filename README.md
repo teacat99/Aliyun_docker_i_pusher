@@ -12,6 +12,7 @@ curl -o docker_pull.sh https://github.com/teacat99/Aliyun_docker_i_pusher/blob/m
 # 私有仓库地址
 PRIVATE_REGISTRY="registry.cn-hangzhou.aliyuncs.com/your-repo"
 ```
+- 对于使用阿里云的云产品时，可以根据需要替换为`专有网络`地址，例如：`registry-vpc.cn-hangzhou.aliyuncs.com/your-repo`，可大幅提升docker拉取的速度以及对公网带宽的占用！
 
 **使用拉取脚本示例**：
 ```sh
