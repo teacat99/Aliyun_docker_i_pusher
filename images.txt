@@ -1,6 +1,62 @@
-nginx
 # 支持私库
 # k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 # xhofe/alist:latest
 # 支持指定架构
 # --platform=linux/arm64 xiaoyaliu/alist
+
+# ===== 常规镜像 =====
+# nginx
+nginx
+
+# mysql
+mysql
+## 1panel_app
+mysql:8.4.3
+
+# frp服务
+frpc
+frps
+## 1panel_app
+snowdreamtech/frps:0.61.1
+snowdreamtech/frpc:0.61.1
+
+# ===== 个性化使用 =====
+# v2raya
+v2raya
+
+# v2raya-gui
+v2raya-gui
+
+# bili-sync
+bili-sync
+
+# bili-sync-rs
+bili-sync-rs
+bili-sync-rs:v2.1.2
+
+# tachidesk
+tachidesk
+
+# flaresolverr
+flaresolverr
+
+# kube-state-metrics
+kube-state-metrics
+
+# ===== 1panel加速 =====
+# 1panel_app
+## openresty
+1panel/openresty:1.21.4.3-3-3-focal
+
+## couchdb
+
+## halo-pro
+halohub/halo-pro:2.20.12
+
+## uptime-kuma
+louislam/uptime-kuma:1.23.16
+
+## Adguard
+adguard/adguardhome:v0.107.55
+
+## cloudbak
