@@ -4,7 +4,7 @@
 
 **在你方便的位置（比如用户目录）下载拉取脚本**：
 ```sh
-curl -o docker_pull.sh https://raw.githubusercontent.com/teacat99/Aliyun_docker_i_pusher/refs/heads/main/docker_pull.sh && chmod +x download_docker_pull.sh
+curl -o docker_pull.sh https://raw.githubusercontent.com/teacat99/Aliyun_docker_i_pusher/refs/heads/main/docker_pull.sh && sudo chmod +x download_docker_pull.sh
 ```
 
 **修改 PRIVATE_REGISTRY 为你的私有仓库地址**:`vi docker_pull.sh`
