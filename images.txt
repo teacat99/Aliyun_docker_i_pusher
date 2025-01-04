@@ -4,46 +4,43 @@
 # 支持指定架构
 # --platform=linux/arm64 xiaoyaliu/alist
 
-# ===== 常规镜像 =====
+# ========== 常规镜像 ==========
 # nginx
-nginx
+nginx:latest
 
 # mysql
-mysql
+mysql:latest
 ## 1panel_app
 mysql:8.4.3
 
 # frp服务
-frpc
-frps
+snowdreamtech/frps:latest
+snowdreamtech/frpc:latest
 ## 1panel_app
 snowdreamtech/frps:0.61.1
 snowdreamtech/frpc:0.61.1
 
-# ===== 个性化使用 =====
+# ========== 个性化使用 ==========
 # v2raya
-v2raya
-
-# v2raya-gui
-v2raya-gui
+mzz2017/v2raya:latest
+mzz2017/v2raya-gui:latest
 
 # bili-sync
-bili-sync
+amtoaer/bili-sync:latest
 
 # bili-sync-rs
-bili-sync-rs
-bili-sync-rs:v2.1.2
+amtoaer/bili-sync-rs:latest
+amtoaer/bili-sync-rs:v2.1.2
 
 # tachidesk
-tachidesk
+ghcr.io/suwayomi/tachidesk:latest
+ghcr.io/suwayomi/tachidesk:stable
+ghcr.io/suwayomi/tachidesk:preview
 
-# flaresolverr
-flaresolverr
+# flaresolverr 用于绕过 Cloudflare 和 DDoS-GUARD 保护
+flaresolverr/flaresolverr:latest
 
-# kube-state-metrics
-kube-state-metrics
-
-# ===== 1panel加速 =====
+# ========== 1panel加速 ==========
 # 1panel_app
 ## openresty
 1panel/openresty:1.21.4.3-3-3-focal
