@@ -49,6 +49,7 @@ flaresolverr/flaresolverr:latest
 
 ## halo-pro
 halohub/halo-pro:2.20.12
+halohub/halo-pro:2.20.13
 
 ## uptime-kuma
 louislam/uptime-kuma:1.23.16
