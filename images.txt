@@ -59,6 +59,7 @@ adguard/adguardhome:v0.107.55
 
 ## Maddy Mail Server
 foxcpp/maddy:0.7.1
+ghcr.io/jinnrry/pmail:latest
 
 ## cloudbak
 
