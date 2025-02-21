@@ -63,3 +63,9 @@ ghcr.io/jinnrry/pmail:latest
 
 ## cloudbak
 
+## chatgpt-next-web
+yidadaa/chatgpt-next-web:v2.16.0
+
+## Lobechat
+lobehub/lobe-chat:1.61.4
+
