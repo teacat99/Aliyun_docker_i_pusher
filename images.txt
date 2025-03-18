@@ -20,6 +20,9 @@ snowdreamtech/frpc:latest
 snowdreamtech/frps:0.61.1
 snowdreamtech/frpc:0.61.1
 
+# Smokeping服务
+linuxserver/smokeping:2.8.2
+
 # ========== 个性化使用 ==========
 # v2raya
 mzz2017/v2raya:latest
